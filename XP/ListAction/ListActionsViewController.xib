@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListActionsViewController" customModule="XP" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="K2X-eb-VK0" id="LdE-Gf-CRz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K2X-eb-VK0">
+                    <rect key="frame" x="0.0" y="120" width="414" height="776"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyR-59-bM7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                    <color key="backgroundColor" red="0.11383748791881443" green="0.11383748791881443" blue="0.11383748791881443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="YEF-qG-Yjh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="K2X-eb-VK0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GN1-E5-1iQ"/>
+                <constraint firstItem="UyR-59-bM7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IwH-3s-2Pp"/>
+                <constraint firstItem="K2X-eb-VK0" firstAttribute="top" secondItem="UyR-59-bM7" secondAttribute="bottom" id="Jrk-d4-dla"/>
+                <constraint firstItem="K2X-eb-VK0" firstAttribute="top" secondItem="UyR-59-bM7" secondAttribute="bottom" id="TPT-mM-SGS"/>
+                <constraint firstAttribute="bottom" secondItem="K2X-eb-VK0" secondAttribute="bottom" id="TS0-bE-uG9"/>
+                <constraint firstItem="K2X-eb-VK0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XXI-zk-so8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UyR-59-bM7" secondAttribute="trailing" id="eoP-oF-Xhe"/>
+                <constraint firstItem="UyR-59-bM7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qcX-w6-QT7"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="69.642857142857139"/>
+        </view>
+    </objects>
+</document>

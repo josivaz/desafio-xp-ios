@@ -10,23 +10,22 @@
 		848503562888754500817F41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503552888754500817F41 /* AppDelegate.swift */; };
 		848503582888754500817F41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503572888754500817F41 /* SceneDelegate.swift */; };
 		8485035A2888754500817F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503592888754500817F41 /* ViewController.swift */; };
-		8485035D2888754500817F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8485035B2888754500817F41 /* Main.storyboard */; };
 		8485035F2888754800817F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8485035E2888754800817F41 /* Assets.xcassets */; };
 		848503622888754800817F41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848503602888754800817F41 /* LaunchScreen.storyboard */; };
 		8485036D2888754800817F41 /* XPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485036C2888754800817F41 /* XPTests.swift */; };
-		848503772888754800817F41 /* XPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503762888754800817F41 /* XPUITests.swift */; };
-		848503792888754800817F41 /* XPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503782888754800817F41 /* XPUITestsLaunchTests.swift */; };
+		848503872888875600817F41 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503852888875600817F41 /* LoginViewController.swift */; };
+		848503882888875600817F41 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848503862888875600817F41 /* LoginViewController.xib */; };
+		8485039B2889D99C00817F41 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503992889D99C00817F41 /* StockTableViewCell.swift */; };
+		8485039C2889D99C00817F41 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485039A2889D99C00817F41 /* StockTableViewCell.xib */; };
+		8485039D2889DAD500817F41 /* ListActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503922889C30E00817F41 /* ListActionsViewController.swift */; };
+		8485039E2889DAD800817F41 /* ListActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848503932889C30F00817F41 /* ListActionsViewController.xib */; };
+		848503AA288A13E800817F41 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503A9288A13E800817F41 /* User.swift */; };
+		848503AC288A13FF00817F41 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503AB288A13FF00817F41 /* Stock.swift */; };
+		848503AE288A142400817F41 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503AD288A142400817F41 /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		848503692888754800817F41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8485034A2888754500817F41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 848503512888754500817F41;
-			remoteInfo = XP;
-		};
-		848503732888754800817F41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8485034A2888754500817F41 /* Project object */;
 			proxyType = 1;
@@ -40,15 +39,20 @@
 		848503552888754500817F41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848503572888754500817F41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		848503592888754500817F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8485035C2888754500817F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8485035E2888754800817F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848503612888754800817F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848503632888754800817F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848503682888754800817F41 /* XPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8485036C2888754800817F41 /* XPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPTests.swift; sourceTree = "<group>"; };
-		848503722888754800817F41 /* XPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		848503762888754800817F41 /* XPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPUITests.swift; sourceTree = "<group>"; };
-		848503782888754800817F41 /* XPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		848503852888875600817F41 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		848503862888875600817F41 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		848503922889C30E00817F41 /* ListActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActionsViewController.swift; sourceTree = "<group>"; };
+		848503932889C30F00817F41 /* ListActionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListActionsViewController.xib; sourceTree = "<group>"; };
+		848503992889D99C00817F41 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		8485039A2889D99C00817F41 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
+		848503A9288A13E800817F41 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		848503AB288A13FF00817F41 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		848503AD288A142400817F41 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8485036F2888754800817F41 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +78,6 @@
 			children = (
 				848503542888754500817F41 /* XP */,
 				8485036B2888754800817F41 /* XPTests */,
-				848503752888754800817F41 /* XPUITests */,
 				848503532888754500817F41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +87,6 @@
 			children = (
 				848503522888754500817F41 /* XP.app */,
 				848503682888754800817F41 /* XPTests.xctest */,
-				848503722888754800817F41 /* XPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +94,12 @@
 		848503542888754500817F41 /* XP */ = {
 			isa = PBXGroup;
 			children = (
+				848503A7288A13B300817F41 /* Models */,
+				84850389288887A200817F41 /* Login */,
+				848503912889C2FC00817F41 /* ListAction */,
 				848503552888754500817F41 /* AppDelegate.swift */,
 				848503572888754500817F41 /* SceneDelegate.swift */,
 				848503592888754500817F41 /* ViewController.swift */,
-				8485035B2888754500817F41 /* Main.storyboard */,
 				8485035E2888754800817F41 /* Assets.xcassets */,
 				848503602888754800817F41 /* LaunchScreen.storyboard */,
 				848503632888754800817F41 /* Info.plist */,
@@ -118,13 +115,34 @@
 			path = XPTests;
 			sourceTree = "<group>";
 		};
-		848503752888754800817F41 /* XPUITests */ = {
+		84850389288887A200817F41 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				848503762888754800817F41 /* XPUITests.swift */,
-				848503782888754800817F41 /* XPUITestsLaunchTests.swift */,
+				848503852888875600817F41 /* LoginViewController.swift */,
+				848503862888875600817F41 /* LoginViewController.xib */,
 			);
-			path = XPUITests;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		848503912889C2FC00817F41 /* ListAction */ = {
+			isa = PBXGroup;
+			children = (
+				848503922889C30E00817F41 /* ListActionsViewController.swift */,
+				848503932889C30F00817F41 /* ListActionsViewController.xib */,
+				848503992889D99C00817F41 /* StockTableViewCell.swift */,
+				8485039A2889D99C00817F41 /* StockTableViewCell.xib */,
+			);
+			path = ListAction;
+			sourceTree = "<group>";
+		};
+		848503A7288A13B300817F41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				848503A9288A13E800817F41 /* User.swift */,
+				848503AB288A13FF00817F41 /* Stock.swift */,
+				848503AD288A142400817F41 /* Transaction.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +183,6 @@
 			productReference = 848503682888754800817F41 /* XPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		848503712888754800817F41 /* XPUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 848503822888754800817F41 /* Build configuration list for PBXNativeTarget "XPUITests" */;
-			buildPhases = (
-				8485036E2888754800817F41 /* Sources */,
-				8485036F2888754800817F41 /* Frameworks */,
-				848503702888754800817F41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				848503742888754800817F41 /* PBXTargetDependency */,
-			);
-			name = XPUITests;
-			productName = XPUITests;
-			productReference = 848503722888754800817F41 /* XPUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +197,6 @@
 						CreatedOnToolsVersion = 13.1;
 					};
 					848503672888754800817F41 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 848503512888754500817F41;
-					};
-					848503712888754800817F41 = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 848503512888754500817F41;
 					};
@@ -221,7 +217,6 @@
 			targets = (
 				848503512888754500817F41 /* XP */,
 				848503672888754800817F41 /* XPTests */,
-				848503712888754800817F41 /* XPUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,20 +226,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848503882888875600817F41 /* LoginViewController.xib in Resources */,
 				848503622888754800817F41 /* LaunchScreen.storyboard in Resources */,
+				8485039E2889DAD800817F41 /* ListActionsViewController.xib in Resources */,
 				8485035F2888754800817F41 /* Assets.xcassets in Resources */,
-				8485035D2888754500817F41 /* Main.storyboard in Resources */,
+				8485039C2889D99C00817F41 /* StockTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		848503662888754800817F41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		848503702888754800817F41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +248,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8485039B2889D99C00817F41 /* StockTableViewCell.swift in Sources */,
+				848503872888875600817F41 /* LoginViewController.swift in Sources */,
+				848503AC288A13FF00817F41 /* Stock.swift in Sources */,
 				8485035A2888754500817F41 /* ViewController.swift in Sources */,
+				848503AE288A142400817F41 /* Transaction.swift in Sources */,
 				848503562888754500817F41 /* AppDelegate.swift in Sources */,
+				8485039D2889DAD500817F41 /* ListActionsViewController.swift in Sources */,
 				848503582888754500817F41 /* SceneDelegate.swift in Sources */,
+				848503AA288A13E800817F41 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +268,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8485036E2888754800817F41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				848503792888754800817F41 /* XPUITestsLaunchTests.swift in Sources */,
-				848503772888754800817F41 /* XPUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,22 +276,9 @@
 			target = 848503512888754500817F41 /* XP */;
 			targetProxy = 848503692888754800817F41 /* PBXContainerItemProxy */;
 		};
-		848503742888754800817F41 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 848503512888754500817F41 /* XP */;
-			targetProxy = 848503732888754800817F41 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8485035B2888754500817F41 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8485035C2888754500817F41 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		848503602888754800817F41 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +417,6 @@
 				INFOPLIST_FILE = XP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +443,6 @@
 				INFOPLIST_FILE = XP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,50 +506,6 @@
 			};
 			name = Release;
 		};
-		848503832888754800817F41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Josielle-Vaz.XPUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = XP;
-			};
-			name = Debug;
-		};
-		848503842888754800817F41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Josielle-Vaz.XPUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = XP;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -604,15 +532,6 @@
 			buildConfigurations = (
 				848503802888754800817F41 /* Debug */,
 				848503812888754800817F41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		848503822888754800817F41 /* Build configuration list for PBXNativeTarget "XPUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				848503832888754800817F41 /* Debug */,
-				848503842888754800817F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
