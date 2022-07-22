@@ -16,8 +16,8 @@
 		848503882888875600817F41 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848503862888875600817F41 /* LoginViewController.xib */; };
 		8485039B2889D99C00817F41 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503992889D99C00817F41 /* StockTableViewCell.swift */; };
 		8485039C2889D99C00817F41 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485039A2889D99C00817F41 /* StockTableViewCell.xib */; };
-		8485039D2889DAD500817F41 /* ListActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503922889C30E00817F41 /* ListActionsViewController.swift */; };
-		8485039E2889DAD800817F41 /* ListActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848503932889C30F00817F41 /* ListActionsViewController.xib */; };
+		8485039D2889DAD500817F41 /* ListStocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503922889C30E00817F41 /* ListStocksViewController.swift */; };
+		8485039E2889DAD800817F41 /* ListStocksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848503932889C30F00817F41 /* ListStocksViewController.xib */; };
 		848503AA288A13E800817F41 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503A9288A13E800817F41 /* User.swift */; };
 		848503AC288A13FF00817F41 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503AB288A13FF00817F41 /* Stock.swift */; };
 		848503AE288A142400817F41 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503AD288A142400817F41 /* Transaction.swift */; };
@@ -46,8 +46,8 @@
 		8485036C2888754800817F41 /* XPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPTests.swift; sourceTree = "<group>"; };
 		848503852888875600817F41 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		848503862888875600817F41 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		848503922889C30E00817F41 /* ListActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActionsViewController.swift; sourceTree = "<group>"; };
-		848503932889C30F00817F41 /* ListActionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListActionsViewController.xib; sourceTree = "<group>"; };
+		848503922889C30E00817F41 /* ListStocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStocksViewController.swift; sourceTree = "<group>"; };
+		848503932889C30F00817F41 /* ListStocksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListStocksViewController.xib; sourceTree = "<group>"; };
 		848503992889D99C00817F41 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		8485039A2889D99C00817F41 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
 		848503A9288A13E800817F41 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				848503B1288A1A9A00817F41 /* Service */,
 				848503A7288A13B300817F41 /* Models */,
 				84850389288887A200817F41 /* Login */,
-				848503912889C2FC00817F41 /* ListAction */,
+				848503912889C2FC00817F41 /* ListStocks */,
 				848503552888754500817F41 /* AppDelegate.swift */,
 				848503572888754500817F41 /* SceneDelegate.swift */,
 				8485035E2888754800817F41 /* Assets.xcassets */,
@@ -126,15 +126,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		848503912889C2FC00817F41 /* ListAction */ = {
+		848503912889C2FC00817F41 /* ListStocks */ = {
 			isa = PBXGroup;
 			children = (
-				848503922889C30E00817F41 /* ListActionsViewController.swift */,
-				848503932889C30F00817F41 /* ListActionsViewController.xib */,
+				848503922889C30E00817F41 /* ListStocksViewController.swift */,
+				848503932889C30F00817F41 /* ListStocksViewController.xib */,
 				848503992889D99C00817F41 /* StockTableViewCell.swift */,
 				8485039A2889D99C00817F41 /* StockTableViewCell.xib */,
 			);
-			path = ListAction;
+			path = ListStocks;
 			sourceTree = "<group>";
 		};
 		848503A7288A13B300817F41 /* Models */ = {
@@ -239,7 +239,7 @@
 			files = (
 				848503882888875600817F41 /* LoginViewController.xib in Resources */,
 				848503622888754800817F41 /* LaunchScreen.storyboard in Resources */,
-				8485039E2889DAD800817F41 /* ListActionsViewController.xib in Resources */,
+				8485039E2889DAD800817F41 /* ListStocksViewController.xib in Resources */,
 				8485035F2888754800817F41 /* Assets.xcassets in Resources */,
 				8485039C2889D99C00817F41 /* StockTableViewCell.xib in Resources */,
 			);
@@ -266,7 +266,7 @@
 				848503B3288A1ACE00817F41 /* StockService.swift in Sources */,
 				848503AE288A142400817F41 /* Transaction.swift in Sources */,
 				848503562888754500817F41 /* AppDelegate.swift in Sources */,
-				8485039D2889DAD500817F41 /* ListActionsViewController.swift in Sources */,
+				8485039D2889DAD500817F41 /* ListStocksViewController.swift in Sources */,
 				848503582888754500817F41 /* SceneDelegate.swift in Sources */,
 				848503AA288A13E800817F41 /* User.swift in Sources */,
 			);

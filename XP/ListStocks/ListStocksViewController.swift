@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListActionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ListStocksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
