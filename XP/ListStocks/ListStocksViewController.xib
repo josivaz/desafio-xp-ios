@@ -24,9 +24,30 @@
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyR-59-bM7">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I3-j8-LZh">
+                            <rect key="frame" x="16" y="70" width="58.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWy-hU-4mB">
+                            <rect key="frame" x="290.5" y="64.5" width="107.5" height="31"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Conta Digital">
+                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" red="0.11383748791881443" green="0.11383748791881443" blue="0.11383748791881443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="eWy-hU-4mB" firstAttribute="centerY" secondItem="1I3-j8-LZh" secondAttribute="centerY" id="Ibb-LG-Zp8"/>
                         <constraint firstAttribute="height" constant="120" id="YEF-qG-Yjh"/>
+                        <constraint firstItem="1I3-j8-LZh" firstAttribute="centerY" secondItem="UyR-59-bM7" secondAttribute="centerY" constant="20" id="aJx-bS-Wo9"/>
+                        <constraint firstAttribute="trailing" secondItem="eWy-hU-4mB" secondAttribute="trailing" constant="16" id="sYH-xt-pFu"/>
+                        <constraint firstItem="1I3-j8-LZh" firstAttribute="leading" secondItem="UyR-59-bM7" secondAttribute="leading" constant="16" id="xoZ-0x-XYP"/>
                     </constraints>
                 </view>
             </subviews>
@@ -46,4 +67,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="69.642857142857139"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

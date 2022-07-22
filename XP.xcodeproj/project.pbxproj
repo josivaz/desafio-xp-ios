@@ -23,6 +23,8 @@
 		848503AE288A142400817F41 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503AD288A142400817F41 /* Transaction.swift */; };
 		848503B0288A160B00817F41 /* MockDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503AF288A160B00817F41 /* MockDataBase.swift */; };
 		848503B3288A1ACE00817F41 /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503B2288A1ACE00817F41 /* StockService.swift */; };
+		848503B6288A2E5600817F41 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503B4288A2E5600817F41 /* StockDetailViewController.swift */; };
+		848503B7288A2E5600817F41 /* StockDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848503B5288A2E5600817F41 /* StockDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		848503AD288A142400817F41 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		848503AF288A160B00817F41 /* MockDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataBase.swift; sourceTree = "<group>"; };
 		848503B2288A1ACE00817F41 /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
+		848503B4288A2E5600817F41 /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		848503B5288A2E5600817F41 /* StockDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				848503932889C30F00817F41 /* ListStocksViewController.xib */,
 				848503992889D99C00817F41 /* StockTableViewCell.swift */,
 				8485039A2889D99C00817F41 /* StockTableViewCell.xib */,
+				848503B4288A2E5600817F41 /* StockDetailViewController.swift */,
+				848503B5288A2E5600817F41 /* StockDetailViewController.xib */,
 			);
 			path = ListStocks;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848503B7288A2E5600817F41 /* StockDetailViewController.xib in Resources */,
 				848503882888875600817F41 /* LoginViewController.xib in Resources */,
 				848503622888754800817F41 /* LaunchScreen.storyboard in Resources */,
 				8485039E2889DAD800817F41 /* ListStocksViewController.xib in Resources */,
@@ -259,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848503B6288A2E5600817F41 /* StockDetailViewController.swift in Sources */,
 				848503B0288A160B00817F41 /* MockDataBase.swift in Sources */,
 				8485039B2889D99C00817F41 /* StockTableViewCell.swift in Sources */,
 				848503872888875600817F41 /* LoginViewController.swift in Sources */,

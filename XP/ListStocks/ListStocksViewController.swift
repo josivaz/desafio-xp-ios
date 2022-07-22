@@ -69,4 +69,19 @@ class ListStocksViewController: UIViewController, UITableViewDataSource, UITable
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var stock: Stock
+        if indexPath.section == 0 {
+            stock = myStocks[indexPath.row]
+        } else {
+            stock = tickers[indexPath.row]
+        }
+        
+        let detailViewController = StockDetailViewController()
+        detailViewController.stock = stock
+        detailViewController.myStock = indexPath.section == 0
+        detailViewController.sheetPresentationController?.detents = [.medium()]
+        present(detailViewController, animated: true, completion: nil)
+    }
+    
 }
