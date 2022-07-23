@@ -25,6 +25,9 @@
 		848503B3288A1ACE00817F41 /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503B2288A1ACE00817F41 /* StockService.swift */; };
 		848503B6288A2E5600817F41 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503B4288A2E5600817F41 /* StockDetailViewController.swift */; };
 		848503B7288A2E5600817F41 /* StockDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848503B5288A2E5600817F41 /* StockDetailViewController.xib */; };
+		848503BB288AEDC400817F41 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503B9288AEDC400817F41 /* AccountViewController.swift */; };
+		848503BC288AEDC400817F41 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848503BA288AEDC400817F41 /* AccountViewController.xib */; };
+		848503BE288C3F0900817F41 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848503BD288C3F0900817F41 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		848503B2288A1ACE00817F41 /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
 		848503B4288A2E5600817F41 /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 		848503B5288A2E5600817F41 /* StockDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockDetailViewController.xib; sourceTree = "<group>"; };
+		848503B9288AEDC400817F41 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		848503BA288AEDC400817F41 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		848503BD288C3F0900817F41 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		848503542888754500817F41 /* XP */ = {
 			isa = PBXGroup;
 			children = (
+				848503B8288AEDA500817F41 /* Acaunt */,
 				848503B1288A1A9A00817F41 /* Service */,
 				848503A7288A13B300817F41 /* Models */,
 				84850389288887A200817F41 /* Login */,
@@ -158,8 +165,18 @@
 			isa = PBXGroup;
 			children = (
 				848503B2288A1ACE00817F41 /* StockService.swift */,
+				848503BD288C3F0900817F41 /* UserService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		848503B8288AEDA500817F41 /* Acaunt */ = {
+			isa = PBXGroup;
+			children = (
+				848503B9288AEDC400817F41 /* AccountViewController.swift */,
+				848503BA288AEDC400817F41 /* AccountViewController.xib */,
+			);
+			path = Acaunt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +265,7 @@
 				848503622888754800817F41 /* LaunchScreen.storyboard in Resources */,
 				8485039E2889DAD800817F41 /* ListStocksViewController.xib in Resources */,
 				8485035F2888754800817F41 /* Assets.xcassets in Resources */,
+				848503BC288AEDC400817F41 /* AccountViewController.xib in Resources */,
 				8485039C2889D99C00817F41 /* StockTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,11 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848503BB288AEDC400817F41 /* AccountViewController.swift in Sources */,
 				848503B6288A2E5600817F41 /* StockDetailViewController.swift in Sources */,
 				848503B0288A160B00817F41 /* MockDataBase.swift in Sources */,
 				8485039B2889D99C00817F41 /* StockTableViewCell.swift in Sources */,
 				848503872888875600817F41 /* LoginViewController.swift in Sources */,
 				848503AC288A13FF00817F41 /* Stock.swift in Sources */,
+				848503BE288C3F0900817F41 /* UserService.swift in Sources */,
 				848503B3288A1ACE00817F41 /* StockService.swift in Sources */,
 				848503AE288A142400817F41 /* Transaction.swift in Sources */,
 				848503562888754500817F41 /* AppDelegate.swift in Sources */,

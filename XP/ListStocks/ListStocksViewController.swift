@@ -69,7 +69,10 @@ class ListStocksViewController: UIViewController, UITableViewDataSource, UITable
         
     }
     
+    // metodo chamado quando clica em uma celula
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // pega a acao selecionada
         var stock: Stock
         if indexPath.section == 0 {
             stock = myStocks[indexPath.row]
@@ -77,11 +80,24 @@ class ListStocksViewController: UIViewController, UITableViewDataSource, UITable
             stock = tickers[indexPath.row]
         }
         
+        // cria a tela de detalhe
         let detailViewController = StockDetailViewController()
+        
+        // atribui a acao selecionada para a tela de detalhe
         detailViewController.stock = stock
+        // atribui se a acao selecionada é minha ou não
         detailViewController.myStock = indexPath.section == 0
+        
+        // configura tela para aparecer até a metade
         detailViewController.sheetPresentationController?.detents = [.medium()]
+        
+        // mostra a tela de detalhe
         present(detailViewController, animated: true, completion: nil)
     }
     
+    @IBAction func accountButtonTap(_ sender: Any) {
+        let accountViewController = AccountViewController()
+        
+        present(accountViewController, animated: true, completion: nil)
+    }
 }

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController" customModule="XP" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmButton" destination="ihb-jX-eV0" id="sCc-UL-HU6"/>
+                <outlet property="depositSegmentedControl" destination="wxb-Vy-P2u" id="YP0-IX-uU8"/>
+                <outlet property="informTextField" destination="xuT-FB-XYO" id="WEm-BI-v6I"/>
+                <outlet property="removeSegmentedControl" destination="wxb-Vy-P2u" id="gxI-Ia-sbu"/>
+                <outlet property="valueLabel" destination="nti-KR-pRA" id="18E-le-I7r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bv5-f2-j7J">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xB2-Zl-9g0">
+                            <rect key="frame" x="92" y="65.5" width="230.5" height="29"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo em Conta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdS-ZZ-dU6">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nti-KR-pRA">
+                                    <rect key="frame" x="178" y="0.0" width="52.5" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byc-ti-d1M">
+                            <rect key="frame" x="16" y="64.5" width="44" height="31"/>
+                            <color key="tintColor" systemColor="systemYellowColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system"/>
+                            <connections>
+                                <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="4gH-XV-7Ps"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1378750359" green="0.1378750359" blue="0.1378750359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Byc-ti-d1M" firstAttribute="leading" secondItem="bv5-f2-j7J" secondAttribute="leading" constant="16" id="4ID-xx-Nbk"/>
+                        <constraint firstAttribute="height" constant="120" id="Ulx-zv-1N3"/>
+                        <constraint firstItem="Byc-ti-d1M" firstAttribute="centerY" secondItem="TdS-ZZ-dU6" secondAttribute="centerY" id="cY6-pK-VV2"/>
+                        <constraint firstItem="xB2-Zl-9g0" firstAttribute="centerY" secondItem="bv5-f2-j7J" secondAttribute="centerY" constant="20" id="kAU-AG-lWf"/>
+                        <constraint firstItem="xB2-Zl-9g0" firstAttribute="centerX" secondItem="bv5-f2-j7J" secondAttribute="centerX" id="lcI-gV-Kq4"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe o valor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xuT-FB-XYO">
+                    <rect key="frame" x="40" y="211" width="334" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihb-jX-eV0">
+                    <rect key="frame" x="100" y="265" width="214" height="31"/>
+                    <color key="tintColor" systemColor="systemYellowColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Confirmar">
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="confirmTap:" destination="-1" eventType="touchUpInside" id="HED-Du-YJ4"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wxb-Vy-P2u">
+                    <rect key="frame" x="80" y="160" width="254" height="32"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <segments>
+                        <segment title="Depósito"/>
+                        <segment title="Saque"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xuT-FB-XYO" secondAttribute="trailing" constant="40" id="0Tz-uJ-jUn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ihb-jX-eV0" secondAttribute="trailing" constant="100" id="JHg-iE-c6r"/>
+                <constraint firstItem="bv5-f2-j7J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LPg-6A-nw5"/>
+                <constraint firstItem="wxb-Vy-P2u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="MLS-6I-1kb"/>
+                <constraint firstItem="bv5-f2-j7J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dFh-gg-Y6k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wxb-Vy-P2u" secondAttribute="trailing" constant="80" id="g4Z-FA-alr"/>
+                <constraint firstItem="xuT-FB-XYO" firstAttribute="top" secondItem="wxb-Vy-P2u" secondAttribute="bottom" constant="20" id="g5x-Mm-v4d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wxb-Vy-P2u" secondAttribute="trailing" constant="80" id="oUv-6Y-V5M"/>
+                <constraint firstItem="ihb-jX-eV0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="rL7-go-BM2"/>
+                <constraint firstItem="bv5-f2-j7J" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="skd-6F-Khf"/>
+                <constraint firstItem="wxb-Vy-P2u" firstAttribute="top" secondItem="bv5-f2-j7J" secondAttribute="bottom" constant="40" id="udU-2U-o9n"/>
+                <constraint firstItem="xuT-FB-XYO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="wMo-Fc-l4b"/>
+                <constraint firstItem="ihb-jX-eV0" firstAttribute="top" secondItem="xuT-FB-XYO" secondAttribute="bottom" constant="20" id="xS1-Di-GMa"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
