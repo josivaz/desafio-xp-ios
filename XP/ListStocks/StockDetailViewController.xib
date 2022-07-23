@@ -97,12 +97,18 @@
                                     <color key="tintColor" systemColor="systemGreenColor"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="Comprar"/>
+                                    <connections>
+                                        <action selector="buyStockTap:" destination="-1" eventType="touchUpInside" id="aFL-Ur-fV5"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwM-19-wCs">
                                     <rect key="frame" x="195" y="0.0" width="187" height="31"/>
                                     <color key="tintColor" systemColor="systemRedColor"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="Vender"/>
+                                    <connections>
+                                        <action selector="sellStockTap:" destination="-1" eventType="touchUpInside" id="diK-WE-fcN"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>

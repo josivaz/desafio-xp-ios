@@ -12,4 +12,5 @@ struct Stock {
     let ticker: String
     let name: String
     let price: Decimal
+    let quantity: Int?
 }

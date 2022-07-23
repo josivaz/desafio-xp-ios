@@ -12,8 +12,6 @@ class ListStocksViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var userLabel: UILabel!
     
-    //Usuario fixo pq o login não está implementado
-    let userId = 1
     var tickers: [Stock] = []
     var myStocks: [Stock] = []
     let service = StockService()
@@ -24,18 +22,23 @@ class ListStocksViewController: UIViewController, UITableViewDataSource, UITable
         tableView.register(UINib(nibName: "StockTableViewCell", bundle: nil), forCellReuseIdentifier: "cellStockId")
         tableView.dataSource = self
         tableView.delegate = self
-        service.getAllTickers { stocks in
-            
-            self.service.getMyStocks(userId: self.userId) { myTickers in
-                self.tickers = stocks.filter { !myTickers.contains($0.ticker)}
-                self.myStocks = stocks.filter { myTickers.contains($0.ticker)}
-                self.tableView.reloadData()
-            }
-        }
         
+        getTickers()
         let userId = UserDefaults.standard.integer(forKey: "userId")
         userService.getUserById(id: userId) { user in
             self.userLabel.text = user?.name
+        }
+    }
+    
+    func getTickers() {
+        let userId = UserDefaults.standard.integer(forKey: "userId")
+        service.getAllTickers { stocks in
+            
+            self.service.getMyStocks(userId: userId) { myTickers in
+                self.tickers = stocks.filter { stock in !myTickers.contains(where: { $0.ticker == stock.ticker })}
+                self.myStocks = myTickers
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -94,6 +97,8 @@ class ListStocksViewController: UIViewController, UITableViewDataSource, UITable
         detailViewController.stock = stock
         // atribui se a acao selecionada é minha ou não
         detailViewController.myStock = indexPath.section == 0
+        // define delegate para atualizar a tela
+        detailViewController.delegate = self
         
         // configura tela para aparecer até a metade
         detailViewController.sheetPresentationController?.detents = [.medium()]
@@ -106,5 +111,13 @@ class ListStocksViewController: UIViewController, UITableViewDataSource, UITable
         let accountViewController = AccountViewController()
         
         present(accountViewController, animated: true, completion: nil)
+    }
+}
+
+// implementação delegate tela detalhe
+extension ListStocksViewController: StockDetailViewControllerDelegate {
+    
+    func transactionWithSuccess() {
+        self.getTickers()
     }
 }
