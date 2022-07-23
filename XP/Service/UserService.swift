@@ -20,6 +20,11 @@ struct UserService {
         callback(user)
     }
     
+    func getUserById(id: Int, callback: (User?)->Void) {
+        let user = MockDataBase.users.first(where: { $0.id == id })
+        callback(user)
+    }
+    
     func deposit(value:Decimal, userId:Int, callback:((Bool)->Void)){
         guard let index = MockDataBase.users.firstIndex(where: { $0.id == userId }) else {
             callback(false)

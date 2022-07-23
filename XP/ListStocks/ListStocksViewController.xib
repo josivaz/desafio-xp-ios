@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListStocksViewController" customModule="XP" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="K2X-eb-VK0" id="LdE-Gf-CRz"/>
+                <outlet property="userLabel" destination="1I3-j8-LZh" id="f4q-eg-gtJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

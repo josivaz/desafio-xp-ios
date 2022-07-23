@@ -11,5 +11,6 @@ struct User {
     
     let id: Int
     let email: String
+    let name: String
     var balance: Decimal
 }

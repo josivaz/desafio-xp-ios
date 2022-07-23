@@ -10,12 +10,14 @@ import UIKit
 class ListStocksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var userLabel: UILabel!
     
     //Usuario fixo pq o login não está implementado
     let userId = 1
     var tickers: [Stock] = []
     var myStocks: [Stock] = []
     let service = StockService()
+    let userService = UserService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,11 @@ class ListStocksViewController: UIViewController, UITableViewDataSource, UITable
                 self.myStocks = stocks.filter { myTickers.contains($0.ticker)}
                 self.tableView.reloadData()
             }
+        }
+        
+        let userId = UserDefaults.standard.integer(forKey: "userId")
+        userService.getUserById(id: userId) { user in
+            self.userLabel.text = user?.name
         }
     }
     
