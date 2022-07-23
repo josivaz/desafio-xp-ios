@@ -8,7 +8,7 @@
 import Foundation
 
 struct MockDataBase {
-    static let users: [User] = [
+    static var users: [User] = [
         .init(id: 1, email: "usuario1@xpi.com", balance: 5000),
         .init(id: 2, email: "usuario2@xpi.com", balance: 321.30)
     ]

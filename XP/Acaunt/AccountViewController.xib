@@ -11,9 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController" customModule="XP" customModuleProvider="target">
             <connections>
                 <outlet property="confirmButton" destination="ihb-jX-eV0" id="sCc-UL-HU6"/>
-                <outlet property="depositSegmentedControl" destination="wxb-Vy-P2u" id="YP0-IX-uU8"/>
                 <outlet property="informTextField" destination="xuT-FB-XYO" id="WEm-BI-v6I"/>
-                <outlet property="removeSegmentedControl" destination="wxb-Vy-P2u" id="gxI-Ia-sbu"/>
+                <outlet property="segmentedControl" destination="wxb-Vy-P2u" id="3XW-bU-Wb1"/>
                 <outlet property="valueLabel" destination="nti-KR-pRA" id="18E-le-I7r"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
