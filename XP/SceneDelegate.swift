@@ -19,7 +19,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: scene)
-        window.rootViewController = ListStocksViewController()
+        
+        let navigationController = UINavigationController()
+        navigationController.isNavigationBarHidden = true
+        
+        // se já existe um usuario logado, mostra lista de ações, se não login
+        // userId == 0 significa que não existe usuario logado.
+        if UserDefaults.standard.integer(forKey: "userId") != 0 {
+            navigationController.viewControllers = [ListStocksViewController()]
+        } else {
+            navigationController.viewControllers = [LoginViewController()]
+        }
+
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
     }
