@@ -10,6 +10,7 @@ import XCTest
 
 class XPTests: XCTestCase {
 
+    let service = UserService()
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -18,16 +19,23 @@ class XPTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDepositInUserAccount() {
+        let amount: Decimal = 10
+        let previousBalance = MockDataBase.users.first(where: { $0.id == 1 })!.balance
+        let expectedValue = previousBalance + amount
+        service.deposit(value: amount, userId: 1, callback: { _ in })
+        
+        let newBalance = MockDataBase.users.first(where: { $0.id == 1 })!.balance
+        XCTAssertEqual(expectedValue, newBalance)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testWithdrawlInUserAccount() {
+        let amount: Decimal = 10
+        let previousBalance = MockDataBase.users.first(where: { $0.id == 1 })!.balance
+        let expectedValue = previousBalance - amount
+        service.withdrawl(value: amount, userId: 1, callback: { _ in })
+        
+        let newBalance = MockDataBase.users.first(where: { $0.id == 1 })!.balance
+        XCTAssertEqual(expectedValue, newBalance)
     }
-
 }
